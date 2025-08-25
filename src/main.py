@@ -3,6 +3,12 @@ from .extract import extract_speaker_blocks, extract_names
 from .detect import find_action_items_with_speakers
 from .ui import show_header, show_upload, show_settings_sidebar, show_results, show_export
 
+st.set_page_config(
+    page_title="Transcript Action Item Extractor",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 def run_app():
     show_header()
 
