@@ -42,3 +42,9 @@ ACTION_VERBS = {
 DEFAULT_KEYWORDS = (
     "action, follow up, send, complete, email, share, remind, assign, connect, confirm"
 )
+
+# Regex to catch "soft cues" that might indicate an actions (used as fallback)
+_SOFT_CUE_RE = re.compile(
+    r"\b(I|We|Let['’]s|Can|Should|Maybe|Please|Need)\b", re.IGNORECASE
+)
+
