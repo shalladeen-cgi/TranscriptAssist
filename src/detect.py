@@ -56,13 +56,6 @@ def find_action_items_with_speakers(speaker_blocks: Iterable, keywords: Iterable
                 item_type = "Possible"
             else:
                 continue
-            
-            # --- OPTIONAL MORE LENIENT FILTERING ---
-            # Uncomment this block if you want to include *all* questions or updates as "Possible"
-            #
-            # if line_clean.endswith("?") or "update" in line_clean.lower():
-            #     item_type = "Possible"
-            # ---------------------------------------
 
         rows.append({
             "Action Item": line_clean,
