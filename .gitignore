@@ -3,3 +3,4 @@ __pycache__/certifi.cpython-311.pyc
 __pycache__/
 *.py[cod]
 *$py.class
+.venv/
